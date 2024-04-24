@@ -1,0 +1,1 @@
+Socket.IO is a JavaScript library that enables real-time, bidirectional communication between web clients and servers. It's built on top of the WebSocket protocol but also provides fallbacks for environments where WebSocket isn't supported, such as older browsers or networks with restrictive proxies.
