@@ -3,7 +3,7 @@ Web App Project
 
 ## Project Demo
 
-[![Watch the video](https://streamable.com/4d0hsm?t=0&src=player-page-share)](https://streamable.com/4d0hsm)
+[![Watch the video](https://i.postimg.cc/bJ37LTPW/Screenshot-598.png)](https://streamable.com/4d0hsm)
 
 
 
