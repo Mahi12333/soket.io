@@ -69,14 +69,14 @@ io.on("connection", (socket) => {
     //if (userId != "undefined") userSocketMap[userId] = socket.id;
 
     if (userId) {
-        userSocketMap[userId] = socket.id;
+        userSocketMap[userId] = socket.id;  // !Online user ko map mei add karta hai
     }
-    io.emit("getOnlineUsers", Object.keys(userSocketMap));
+    io.emit("getOnlineUsers", Object.keys(userSocketMap)); //! Online users ki list ko sabhi clients ko bhejta hai
 
     socket.on("disconnect", () => {
         console.log("user disconnected", socket.id);
-        delete userSocketMap[userId];
-        io.emit("getOnlineUsers", Object.keys(userSocketMap));
+        delete userSocketMap[userId]; //! Disconnect hone par user ko map se remove karta hai
+        io.emit("getOnlineUsers", Object.keys(userSocketMap)); //! Updated online users ki list ko sabhi clients ko bhejta hai
     });
 });
 
